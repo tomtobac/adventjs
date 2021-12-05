@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest",
     "test:watch": "jest -o --watch",
-    "new": "hygen challenge new"
+    "new": "hygen challenge new",
+    "postinstall": "simple-git-hooks"
   },
   "keywords": [],
   "author": "",
