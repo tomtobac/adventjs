@@ -31,7 +31,7 @@ __#__
 Ten en cuenta que el árbol es un string y necesitas los saltos de línea \n para cada línea para que se forme bien el árbol.
 */
 
-module.exports = function createXmasTree(height) {
+export default function createXmasTree(height) {
   const base = height * 2 - 1;
   const tree = [];
   for (let i = 0; i < height; i++) {
@@ -44,4 +44,4 @@ module.exports = function createXmasTree(height) {
   tree.push(bottomTree);
 
   return tree.join('\n');
-};
+}

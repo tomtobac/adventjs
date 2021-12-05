@@ -1,4 +1,4 @@
-const isValid = require('./challenge3.js');
+import isValid from './challenge3.js';
 
 test('should check if the letter is valid or not', () => {
   expect(isValid('bici coche (balón) bici coche peluche')).toBe(true);

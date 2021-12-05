@@ -1,4 +1,4 @@
-const contarOvejas = require('./challenge1.js');
+import contarOvejas from './challenge1';
 
 const ovejas = [
   { name: 'Noa', color: 'azul' },

@@ -1,4 +1,4 @@
-const daysToXmas = require('./challenge5.js');
+import daysToXmas from './challenge5.js';
 
 test('should return the days remaining to Dec 25th', () => {
   const date = new Date('Dec 25, 2021');

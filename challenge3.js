@@ -21,7 +21,7 @@ Ejemplos:
 Crea una función que pasándole el texto de la carta, devuelva true si es válida y false si no lo es. ¡Y acaba con la travesura del Grinch!
 */
 
-module.exports = function isValid(letter) {
+export default function isValid(letter) {
   const chars = letter.split('');
   let openIndex = 0;
   for (let i = 0; i < chars.length; i++) {
@@ -43,4 +43,4 @@ module.exports = function isValid(letter) {
   }
 
   return openIndex == null;
-};
+}

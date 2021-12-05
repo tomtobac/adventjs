@@ -1,4 +1,4 @@
-const listGifts = require('./challenge2.js');
+import listGifts from './challenge2.js';
 
 const carta = 'bici coche balón _playstation bici coche peluche';
 

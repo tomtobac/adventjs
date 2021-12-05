@@ -24,7 +24,7 @@ console.log(regalos)
 Ten en cuenta que los tests pueden ser más exhaustivos... 😝 ¡Cuidado con contar espacios vacíos!
 */
 
-module.exports = function listGifts(letter) {
+export default function listGifts(letter) {
   const gifts = letter.split(' ').filter((gift) => gift.trim());
   return gifts.reduce((acc, gift) => {
     if (!gift.startsWith('_')) {
@@ -32,4 +32,4 @@ module.exports = function listGifts(letter) {
     }
     return acc;
   }, {});
-};
+}
