@@ -23,7 +23,5 @@ console.log(ovejasFiltradas)
 */
 
 module.exports = function contarOvejas(ovejas) {
-	return ovejas.filter(
-		(oveja) => oveja.color === "rojo" && /(?=.*n)(?=.*a)/i.test(oveja.name)
-	);
+  return ovejas.filter((oveja) => oveja.color === 'rojo' && /(?=.*n)(?=.*a)/i.test(oveja.name));
 };

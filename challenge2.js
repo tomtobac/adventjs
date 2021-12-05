@@ -25,11 +25,11 @@ Ten en cuenta que los tests pueden ser más exhaustivos... 😝 ¡Cuidado con co
 */
 
 module.exports = function listGifts(letter) {
-	const gifts = letter.split(" ").filter((gift) => gift.trim());
-	return gifts.reduce((acc, gift) => {
-		if (!gift.startsWith("_")) {
-			acc[gift] = acc[gift] ? acc[gift] + 1 : 1;
-		}
-		return acc;
-	}, {});
+  const gifts = letter.split(' ').filter((gift) => gift.trim());
+  return gifts.reduce((acc, gift) => {
+    if (!gift.startsWith('_')) {
+      acc[gift] = acc[gift] ? acc[gift] + 1 : 1;
+    }
+    return acc;
+  }, {});
 };
