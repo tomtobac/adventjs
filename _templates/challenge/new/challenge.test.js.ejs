@@ -1,0 +1,10 @@
+---
+to: ./<%=name%>.test.js
+---
+
+const <%=name%> = require("./<%=name%>.js");
+
+test("should not pass", () => {
+	expect(<%=name%>()).toBe(false);
+});
+

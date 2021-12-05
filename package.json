@@ -12,5 +12,8 @@
   "license": "ISC",
   "dependencies": {
     "jest": "^27.4.3"
+  },
+  "devDependencies": {
+    "hygen": "^6.1.0"
   }
 }
