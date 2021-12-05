@@ -1,10 +1,12 @@
 ---
-to: ./<%=name%>.test.js
+to: ./<%=name%>/<%=name%>.test.js
 ---
 
-const <%=name%> = require("./<%=name%>.js");
+import <%=name%> from "./<%=name%>.js";
 
-test("should not pass", () => {
-	expect(<%=name%>()).toBe(false);
+describe("<%=name%> tests", () => {
+	it("should fail", () => {
+		expect(<%=name%>()).toBe(true);
+	});
 });
 
