@@ -22,25 +22,12 @@ Crea una función que pasándole el texto de la carta, devuelva true si es váli
 */
 
 export default function isValid(letter) {
-  const chars = letter.split('');
-  let openIndex = 0;
-  for (let i = 0; i < chars.length; i++) {
-    const char = chars[i];
-    if (char === '(') {
-      openIndex = i;
-    }
-
-    if ((char === '{' || char === '[') && openIndex != null) {
-      return false;
-    }
-
-    if (char === ')') {
-      if (!(i > openIndex + 1)) {
-        return false;
-      }
-      openIndex = null;
-    }
+  if (letter.includes('{') || letter.includes('[') || letter.includes('()')) {
+    return false;
   }
 
-  return openIndex == null;
+  const openParenthesisLen = (letter.match(/\(/g) || []).length;
+  const closedParenthesisLen = (letter.match(/\)/g) || []).length;
+
+  return openParenthesisLen === closedParenthesisLen;
 }
