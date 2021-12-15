@@ -4,8 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest --runInBand",
     "test:watch": "jest -o --watch",
+    "lint": "eslint challenge*/**/*.js",
+    "lint:fix": "eslint --fix challenge*/**/*.js",
+    "prettier:write": "prettier --write challenge*/**/*.js",
     "new": "hygen challenge new",
     "postinstall": "simple-git-hooks"
   },
@@ -13,6 +16,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "eslint": "^8.4.1",
     "hygen": "^6.1.0",
     "jest": "^27.4.3",
     "jest-esm-transformer": "^1.0.0",
